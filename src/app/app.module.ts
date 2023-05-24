@@ -4,9 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ArtworkListPageComponent } from './core/pages/artwork/list/artwork-list.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ArtworkPreviewComponent } from './shared/components/artwork-preview/artwork-preview.component';
 
 @NgModule({
-  declarations: [AppComponent, ArtworkListPageComponent],
+  declarations: [AppComponent, ArtworkListPageComponent, ArtworkPreviewComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
