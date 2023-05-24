@@ -1,0 +1,12 @@
+<img
+  *ngIf="artwork"
+  class="img"
+  [src]="
+    loaded
+      ? 'https://www.artic.edu/iiif/2/' +
+        artwork.image_id +
+        '/full/843,/0/default.jpg'
+      : artwork.thumbnail.lqip
+  "
+  (load)="onImageLoad($event)"
+/>
