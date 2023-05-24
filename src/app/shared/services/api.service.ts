@@ -10,6 +10,6 @@ export class ApiService {
   apiAddress = 'https://api.artic.edu/api/v1';
 
   getArtworks(): Observable<any> {
-    return this.http.get(this.apiAddress);
+    return this.http.get(`${this.apiAddress}/artworks`);
   }
 }
