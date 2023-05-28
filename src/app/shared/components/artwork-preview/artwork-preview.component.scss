@@ -1,6 +1,12 @@
-.img {
-  width: calc(100vw / 3);
+.link {
+  width: 500px;
   height: 500px;
+  display: flex;
+}
+
+.img {
+  width: inherit;
+  height: inherit;
   object-fit: cover;
   box-sizing: border-box;
   margin: 0;

@@ -7,9 +7,14 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
   constructor(private http: HttpClient) {}
-  apiAddress = 'https://api.artic.edu/api/v1';
 
-  getArtworks(): Observable<any> {
+  private apiAddress = 'https://api.artic.edu/api/v1';
+
+  public getArtworks(): Observable<any> {
     return this.http.get(`${this.apiAddress}/artworks`);
+  }
+
+  public getArtwork(id: number): Observable<any> {
+    return this.http.get(`${this.apiAddress}/artworks/${id}`);
   }
 }

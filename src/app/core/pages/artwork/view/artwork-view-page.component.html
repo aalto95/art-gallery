@@ -1,2 +1,15 @@
-<a [routerLink]="['/artworks']">go back</a>
-<p>artwork-view-page works!</p>
+<div class="artwork-view-page">
+  <a [routerLink]="['/artworks']">go back</a>
+  <img
+    *ngIf="artwork"
+    [src]="
+      loaded
+        ? 'https://www.artic.edu/iiif/2/' +
+          artwork.image_id +
+          '/full/843,/0/default.jpg'
+        : artwork.thumbnail.lqip
+    "
+    alt=""
+    (load)="onImageLoad($event)"
+  />
+</div>
