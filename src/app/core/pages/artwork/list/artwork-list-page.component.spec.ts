@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArtworkListPageComponent } from './artwork-list.component';
+import { ArtworkListPageComponent } from './artwork-list-page.component';
 
 describe('ListComponent', () => {
   let component: ArtworkListPageComponent;

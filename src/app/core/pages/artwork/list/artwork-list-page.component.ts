@@ -3,8 +3,8 @@ import { ApiService } from 'src/app/shared/services/api.service';
 
 @Component({
   selector: 'app-artwork-list-page',
-  templateUrl: './artwork-list.component.html',
-  styleUrls: ['./artwork-list.component.scss'],
+  templateUrl: './artwork-list-page.component.html',
+  styleUrls: ['./artwork-list-page.component.scss'],
 })
 export class ArtworkListPageComponent implements OnInit {
   constructor(private apiService: ApiService) {}
