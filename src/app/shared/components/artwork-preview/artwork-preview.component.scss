@@ -1,6 +1,14 @@
 .link {
-  width: 500px;
-  height: 500px;
+  @media screen and (min-width: 500px) {
+    width: 500px;
+    height: 500px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100vw;
+    height: 100vw;
+  }
+
   display: flex;
 }
 

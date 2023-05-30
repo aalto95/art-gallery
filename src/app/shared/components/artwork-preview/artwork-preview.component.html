@@ -9,6 +9,9 @@
           '/full/843,/0/default.jpg'
         : artwork.thumbnail.lqip
     "
+    [alt]="artwork.thumbnail.alt_text"
     (load)="onImageLoad($event)"
   />
 </a>
+<p>{{ artwork.artist_display }}</p>
+<p>{{ artwork.date_display }}</p>
