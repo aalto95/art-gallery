@@ -4,3 +4,9 @@
     [artwork]="artwork"
   ></app-artwork-preview>
 </div>
+
+<div *ngIf="pagination">
+  <button (click)="changePage('LEFT')"><</button>
+  {{ pagination.current_page }}
+  <button (click)="changePage('RIGHT')">></button>
+</div>
