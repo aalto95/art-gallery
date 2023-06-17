@@ -3,3 +3,17 @@
   justify-content: center;
   align-items: center;
 }
+
+.back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+
+  &-icon {
+    width: 32px;
+    height: 32px;
+  }
+}

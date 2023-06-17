@@ -1,5 +1,8 @@
 <div class="artwork-view-page">
-  <a [routerLink]="['/artworks']">go back</a>
+  <a [routerLink]="['/artworks']" class="back-btn"
+    ><img src="/assets/icons/back.svg" alt="back" class="back-btn-icon" /> Go
+    back</a
+  >
   <img
     *ngIf="artwork"
     [src]="
