@@ -1,17 +1,20 @@
-<a class="link" [routerLink]="['/artworks', artwork.id]">
-  <img
-    *ngIf="artwork"
-    class="img"
-    [src]="
-      loaded
-        ? 'https://www.artic.edu/iiif/2/' +
-          artwork.image_id +
-          '/full/843,/0/default.jpg'
-        : artwork?.thumbnail?.lqip
-    "
-    [alt]="artwork?.thumbnail?.alt_text"
-    (load)="onImageLoad($event)"
-  />
-</a>
-<p>{{ artwork.artist_display }}</p>
-<p>{{ artwork.date_display }}</p>
+<div class="container" *ngIf="!isLoadError">
+  <a class="link" [routerLink]="['/artworks', artwork.id]">
+    <img
+      *ngIf="artwork"
+      class="img"
+      [src]="
+        loaded
+          ? 'https://www.artic.edu/iiif/2/' +
+            artwork.image_id +
+            '/full/843,/0/default.jpg'
+          : artwork?.thumbnail?.lqip
+      "
+      [alt]="artwork?.thumbnail?.alt_text"
+      (load)="onImageLoad($event)"
+      (error)="onImageLoadError($event)"
+    />
+  </a>
+  <p>{{ artwork.artist_display }}</p>
+  <p>{{ artwork.date_display }}</p>
+</div>

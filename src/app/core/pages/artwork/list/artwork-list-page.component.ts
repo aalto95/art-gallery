@@ -32,7 +32,7 @@ export class ArtworkListPageComponent implements OnInit {
     });
   }
 
-  changePage(direction: 'LEFT' | 'RIGHT'): void {
+  changePage(direction?: 'LEFT' | 'RIGHT'): void {
     if (direction === 'LEFT') {
       this.router.navigate(['/artworks'], {
         queryParams: {
@@ -46,5 +46,13 @@ export class ArtworkListPageComponent implements OnInit {
         },
       });
     }
+  }
+
+  navigateToPage(ev: Event): void {
+    this.router.navigate(['/artworks'], {
+      queryParams: {
+        page: (ev.target as HTMLInputElement).value,
+      },
+    });
   }
 }

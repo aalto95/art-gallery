@@ -1,22 +1,32 @@
-.link {
+.container {
   @media screen and (min-width: 500px) {
     width: 500px;
-    height: 500px;
   }
 
   @media screen and (max-width: 500px) {
     width: 100vw;
-    height: 100vw;
   }
 
-  display: flex;
-}
+  .link {
+    @media screen and (min-width: 500px) {
+      width: 500px;
+      height: 500px;
+    }
 
-.img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    @media screen and (max-width: 500px) {
+      width: 100vw;
+      height: 100vw;
+    }
+
+    display: flex;
+  }
+
+  .img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }

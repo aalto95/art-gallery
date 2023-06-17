@@ -9,6 +9,7 @@ export class ArtworkPreviewComponent {
   @Input() artwork: any;
 
   loaded = false;
+  isLoadError = false;
 
   @HostBinding('class.artwork-preview') get artworkPreview() {
     return true;
@@ -16,5 +17,9 @@ export class ArtworkPreviewComponent {
 
   onImageLoad(event: any) {
     this.loaded = true;
+  }
+
+  onImageLoadError(event: any) {
+    this.isLoadError = true;
   }
 }
