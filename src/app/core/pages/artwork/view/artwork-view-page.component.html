@@ -1,8 +1,11 @@
 <div class="artwork-view-page">
-  <a [routerLink]="['/artworks']" class="back-btn"
-    ><img src="/assets/icons/back.svg" alt="back" class="back-btn-icon" /> Go
-    back</a
-  >
+  <div class="header">
+    <a [routerLink]="['/artworks']" class="back-btn"
+      ><img src="/assets/icons/back.svg" alt="back" class="back-btn-icon" /> Go
+      back</a
+    >
+    <h2 *ngIf="artwork">{{ artwork.title }}</h2>
+  </div>
   <img
     *ngIf="artwork"
     [src]="
@@ -14,5 +17,6 @@
     "
     [alt]="artwork.thumbnail.alt_text"
     (load)="onImageLoad()"
+    class="image"
   />
 </div>
