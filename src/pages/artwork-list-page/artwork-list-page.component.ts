@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription, map } from 'rxjs';
 import { ApiService } from 'src/shared/api/api.service';
-import { ArtworkPreviewComponent } from '../../features/artwork-preview/artwork-preview.component';
+import { ArtworkPreviewComponent } from '@features/artwork-preview/artwork-preview.component';
 import { NgIf, NgFor } from '@angular/common';
 
 @Component({

@@ -1,5 +1,5 @@
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { ApiService } from '../../shared/api/api.service';
+import { ApiService } from '@shared/api/api.service';
 import { Component } from '@angular/core';
 import { first } from 'rxjs';
 import { NgIf } from '@angular/common';
