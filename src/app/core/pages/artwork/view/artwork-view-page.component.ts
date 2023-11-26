@@ -1,12 +1,15 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ApiService } from './../../../../shared/services/api.service';
 import { Component } from '@angular/core';
 import { first } from 'rxjs';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-artwork-view-page',
   templateUrl: './artwork-view-page.component.html',
   styleUrls: ['./artwork-view-page.component.scss'],
+  standalone: true,
+  imports: [RouterLink, NgIf],
 })
 export class ArtworkViewPageComponent {
   constructor(private apiService: ApiService, private route: ActivatedRoute) {}

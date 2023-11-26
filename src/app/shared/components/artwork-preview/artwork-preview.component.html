@@ -1,7 +1,6 @@
-<div class="container" *ngIf="!isLoadError">
+<div class="container" *ngIf="!isLoadError && artwork.image_id">
   <a class="link" [routerLink]="['/artworks', artwork.id]">
     <img
-      *ngIf="artwork"
       class="img"
       [src]="
         loaded

@@ -8,8 +8,8 @@ describe('ArtworkViewPageComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ArtworkViewPageComponent]
-    });
+    imports: [ArtworkViewPageComponent]
+});
     fixture = TestBed.createComponent(ArtworkViewPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
