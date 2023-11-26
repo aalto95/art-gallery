@@ -2,7 +2,7 @@
   <div *ngIf="pagination" class="pagination">
     <button (click)="changePage('LEFT')" class="pagination__btn">
       <img
-        src="/assets/icons/arrow-right.svg"
+        src="/shared/assets/icons/arrow-right.svg"
         alt="left"
         class="arrow arrow-left"
       />
@@ -13,7 +13,11 @@
       (change)="navigateToPage($event)"
     />
     <button (click)="changePage('RIGHT')" class="pagination__btn">
-      <img src="/assets/icons/arrow-right.svg" alt="right" class="arrow" />
+      <img
+        src="/shared/assets/icons/arrow-right.svg"
+        alt="right"
+        class="arrow"
+      />
     </button>
   </div>
 

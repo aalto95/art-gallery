@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ArtworkListPageComponent } from './core/pages/artwork/list/artwork-list-page.component';
-import { ArtworkViewPageComponent } from './core/pages/artwork/view/artwork-view-page.component';
-import { MainLayoutComponent } from './shared/layouts/main-layout/main-layout.component';
+import { ArtworkListPageComponent } from '../pages/artwork-list-page/artwork-list-page.component';
+import { ArtworkViewPageComponent } from '../pages/artwork-view-page/artwork-view-page.component';
+import { MainLayoutComponent } from '../shared/layouts/main-layout/main-layout.component';
 
 const routes: Routes = [
   {
