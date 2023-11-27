@@ -4,14 +4,14 @@ import { Subscription, map } from 'rxjs';
 import { ApiService } from 'src/shared/api/api.service';
 import { ArtworkPreviewComponent } from 'src/entities/artwork-preview/artwork-preview.component';
 import { NgIf, NgFor } from '@angular/common';
-import { ArtworkListComponent } from 'src/widgets/artwork-list/artwork-list.component';
+import { ArtworkMainListComponent } from 'src/widgets/artwork-main-list/artwork-main-list.component';
 
 @Component({
   selector: 'app-artwork-list-page',
   templateUrl: './artwork-list-page.component.html',
   styleUrls: ['./artwork-list-page.component.scss'],
   standalone: true,
-  imports: [NgIf, NgFor, ArtworkPreviewComponent, ArtworkListComponent],
+  imports: [NgIf, NgFor, ArtworkPreviewComponent, ArtworkMainListComponent],
 })
 export class ArtworkListPageComponent implements OnInit {
   constructor(
