@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from 'src/wigdets/header/header.component';
+import { HeaderComponent } from 'src/widgets/header/header.component';
 
 @Component({
   selector: 'app-main-layout',
